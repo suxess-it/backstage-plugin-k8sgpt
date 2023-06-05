@@ -6,6 +6,10 @@ _This plugin was created through the Backstage CLI_
 
 ## Getting started
 
+K8sGPT installation:
+
+You need to install [K8sGPT via the operator](https://github.com/k8sgpt-ai/k8sgpt-operator/). You need the operator installation because the operator also triggers k8sgpt analyzes and saves the results in result CRs which get display in this backstage plugin. You will need at least v0.0.17 which has [backstage-support](https://github.com/k8sgpt-ai/k8sgpt-operator/pull/127) included.
+
 Install plugin:
 ```
 yarn add --cwd packages/app @suxess-it/backstage-plugin-k8sgpt
@@ -43,5 +47,11 @@ Please be aware the the used ClusterRole as described in https://backstage.io/do
   - get
   - list
 ```
+
+## What you will see
+
+plugin-k8sgpt shows you the k8sgpt Results for the corresponding entity in a table like this:
+
+![image](https://github.com/suxess-it/backstage-plugin-k8sgpt/assets/11465610/24591cc2-1290-4a3b-bf91-4d6e5b1a89cf)
 
 
