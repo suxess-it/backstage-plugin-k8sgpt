@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-plugin-k8sgpt
+  title: Backstage Plugin k8sgpt
+  description: |
+    Backstage plugin to provide k8sgpt integration
+  annotations:
+    github.com/project-slug: suxess-it/backstage-plugin-k8sgpt
+    backstage.io/view-url: https://github.com/suxess-it/backstage-plugin-k8sgpt/blob/main/catalog-info.yaml
+  tags:
+    - plugin
+    - frontend
+  links:
+    - url: https://www.npmjs.com/package/@suxess-it/backstage-plugin-k8sgpt
+      title: NPM
+spec:
+  type: library
+  owner: sx-authors
+  lifecycle: production
+  dependsOn:
+    - resource:k8sgpt
